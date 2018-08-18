@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RA Quiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- Page Content -->
+    
+    <div class="container">
+    
+        <h1 class="topright" id="score">score: 0</h1>
+      
+      <div class="row">
+
+        <div class="col-lg-12 text-center">
+          
+          <h1 class="mt-5" id="title">Welcome to Red Acaedmy Quizz</h1>
+          <p class="lead" id = "content">Select the Desired Quiz</p>
+
+            <div id = "questionContent"></div>
+            <div id = "answer1"></div>
+        
+            <button type="button" class="btn btn-primary" id="abs-quiz-btn" onclick="showAbstractQuiz()">Abstract Quiz</button>
+            <button type="button" class="btn btn-info" id="dev-quiz-btn" onclick="showDevQuiz()">Dev Quiz</button>
+
+
+                <button type="button" class="btn btn-info" id="optionOne-btn" style="display: none"></button>
+                  <br>
+                <button type="button" class="btn btn-info" id="optionTwo-btn" style="display: none"></button>
+                  <br>
+                <button type="button" class="btn btn-info" id="optionThree-btn"style="display: none"></button>
+                  <br>
+                <button type="button" class="btn btn-info" id="optionFour-btn" style="display: none"></button>
+                  <br>
+                  <button type="button" class="btn btn-warning" id="next-btn" onclick="nextbutton()"style="display: none">next Question</button>  
+                  <button type="button" class="btn btn-warning" id="next-btn1" onclick="nextbutton1()"style="display: none">next Question</button>  
+        </div>
+        <div id= "resultPage"></div>
+      </div>
+      
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="main.js"></script>
+    <script src="QuizData.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
