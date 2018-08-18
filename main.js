@@ -81,14 +81,14 @@ function nextbutton() {
                 hide(option3);
                 hide(option4);
                 if (score > 5){
-                    var result = ".Congratulations! You Passed";
+                    var result = "Congratulations! You Passed";
                 }
                 else {
-                    var result = ".I am sorry you Failed"
+                    var result = "I am sorry you Failed"
                 }
                     
 
-                resultPage.innerText = "Your Score: " + score +" " + result;
+                title.innerText = "Your Score: " + score +"\n " + result;
             })
     }
 }
@@ -148,7 +148,7 @@ function nextbutton1() {
                 }
                     
 
-                resultPage.innerText = "Your Score: " + score +" " + result;
+                title.innerText = "Your Score: " + score +"\n  " + result;
             })
     }
     
